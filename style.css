@@ -1,56 +1,91 @@
 body {
-  padding: 0;
-  margin: 0;
+  background-image: url(images/card-blue50l35.jpg);
 }
 
 .piano {
-  height: 200px;
-  width: 200px;
-  margin-bottom: -20px;
-  align-items: center;
+  height: 250px;
+  margin-bottom: -10px;
+  border: 2px solid black;
 }
 .notes {
   height: 175px;
   width: 100px;
-  margin-bottom: -50px;
-  align-items: center;
+  margin-bottom: -60px;
+  margin-top: -60px;
+  border: 2px solid black;
 }
 .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
+  border: 2px solid black;
 }
 
-.start {
-  text-align: center;
-  box-sizing: border-box;
-  margin-left: 300px;
-  margin-right: 300px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 25px;
+.navbar {
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@media screen and (max-width: 768px) {
-  .piano {
-    height: 100px;
-    width: 100px;
-    margin-bottom: -5px;
+.title {
+  display: flex;
+  gap: 20px;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.content {
+  display: flex;
+
+  border: 2px solid black;
+  height: auto;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar {
+  border: 2px solid black;
+}
+
+.feed {
+  border: 2px solid black;
+  height: 50%;
+  width: 50%;
+  text-align: left;
+  margin-right: 200px;
+}
+
+.post {
+  border: 2px solid black;
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .notes {
-    height: 75px;
-    width: 50px;
-    margin-bottom: -20px;
+  .nav-left p,
+  .nav-right p {
+    margin: 5px 0; /* Adjust margin as needed */
   }
 
-  .logo {
-    font-size: 16px;
+  .content {
+    padding: 10px;
   }
 
-  .start {
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
+  .sidebar {
+    display: block; /* Display sidebar on mobile */
   }
 }
