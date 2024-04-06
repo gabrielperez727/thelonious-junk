@@ -125,6 +125,7 @@ iframe {
   }
   .feed {
     width: 100%;
+    overflow-x: hidden;
   }
   .post {
     width: 100%;
@@ -144,5 +145,10 @@ iframe {
     gap: 25px;
     margin-top: -20px;
     margin-left: 15px;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
   }
 }
