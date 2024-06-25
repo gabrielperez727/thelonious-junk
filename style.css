@@ -29,6 +29,7 @@ p {
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
+  margin: 5px;
   box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999,
     4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
 }
@@ -59,6 +60,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .content {
@@ -179,6 +181,9 @@ iframe {
   }
   iframe {
     height: 300px;
+  }
+  body {
+    padding: 1px;
   }
 }
 
