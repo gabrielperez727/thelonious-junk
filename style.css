@@ -9,6 +9,11 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-image: url("/images/card-blue50l35.jpg");
+  padding: 10px;
+}
+
+p {
+  font-family: sans-serif;
 }
 
 .container {
@@ -26,19 +31,20 @@ body {
   margin-bottom: 10px;
 }
 
+.headertext {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .sidebar {
-  border: 1px solid red;
   flex: 1;
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 150px;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin-right: 20px;
 }
 
 .mainpage {
-  border: 1px solid blue;
   flex: 3;
   width: 100%;
   background-color: white;
@@ -52,13 +58,11 @@ body {
 }
 
 .content {
-  border: 1px solid red;
   flex: 3;
   margin-right: 10px;
 }
 
 .quotes {
-  border: 1px solid red;
   flex: 1;
 }
 
@@ -67,7 +71,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid orange;
+  margin-top: -50px;
 }
 
 .piano {
@@ -83,7 +87,6 @@ body {
 }
 
 .navlinks {
-  border: 1px solid brown;
 }
 
 .navlinks ul {
@@ -133,7 +136,6 @@ iframe {
 }
 
 .quote {
-  border: 1px solid purple;
   padding: 5px;
 }
 
@@ -167,12 +169,11 @@ iframe {
   }
 }
 
-
 .navbar {
   display: none;
   align-items: center;
   justify-content: space-between;
-  
+
   padding: 10px;
   color: black;
 }
@@ -198,7 +199,7 @@ iframe {
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   width: 100%;
@@ -222,40 +223,37 @@ iframe {
 .nav-item {
   padding: 10px;
   text-decoration: none;
-  color: white;
-}
-
-.nav-item:hover {
-  background-color: #575757;
+  color: black;
 }
 
 @media (max-width: 768px) {
   .nav-toggle-label {
-      display: flex;
+    display: flex;
   }
 
   .navbar {
     display: flex;
   }
   .nav-menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
   }
   .nav-item {
-      text-align: center;
-      padding: 15px;
-      border-top: 1px solid #575757;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #575757;
   }
   .nav-toggle:checked + .nav-toggle-label + .nav-menu {
-      display: flex;
+    display: flex;
   }
   .nav-toggle:checked + .nav-toggle-label span {
-      transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   .nav-toggle:checked + .nav-toggle-label span::before {
-      transform: rotate(90deg) translateX(8px);
+    transform: rotate(90deg) translateX(8px);
   }
   .nav-toggle:checked + .nav-toggle-label span::after {
-      transform: rotate(90deg) translateX(-8px);
+    transform: rotate(90deg) translateX(-8px);
   }
+}
