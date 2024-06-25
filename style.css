@@ -167,6 +167,10 @@ iframe {
   iframe {
     height: 300px;
   }
+
+  body {
+    padding: 1px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -247,6 +251,10 @@ iframe {
 @media (max-width: 768px) {
   .nav-toggle-label {
     display: flex;
+  }
+
+  body {
+    padding: 1px;
   }
 
   iframe {
