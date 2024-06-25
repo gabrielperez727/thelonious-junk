@@ -8,7 +8,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-image: url("card-blue50l35.jpg");
+  background-image: url("/images/card-blue50l35.jpg");
 }
 
 .container {
@@ -166,3 +166,96 @@ iframe {
     padding: 5px;
   }
 }
+
+
+.navbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 10px;
+  color: black;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 30px;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav-toggle-label span::before {
+  transform: translateY(-8px);
+}
+
+.nav-toggle-label span::after {
+  transform: translateY(8px);
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-item {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle-label {
+      display: flex;
+  }
+
+  .navbar {
+    display: flex;
+  }
+  .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+  .nav-item {
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #575757;
+  }
+  .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+      display: flex;
+  }
+  .nav-toggle:checked + .nav-toggle-label span {
+      transform: rotate(45deg);
+  }
+  .nav-toggle:checked + .nav-toggle-label span::before {
+      transform: rotate(90deg) translateX(8px);
+  }
+  .nav-toggle:checked + .nav-toggle-label span::after {
+      transform: rotate(90deg) translateX(-8px);
+  }
