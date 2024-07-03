@@ -13,7 +13,7 @@ body {
 }
 
 p {
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .container {
@@ -27,6 +27,8 @@ p {
   border: 1px solid black;
   background-color: rgb(249, 249, 249);
   text-align: center;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   margin-bottom: 10px;
   margin: 5px;
@@ -45,6 +47,12 @@ p {
   display: flex;
   flex-direction: column;
   padding: 10px;
+
+  margin-right: 20px;
+}
+
+.column {
+  margin-bottom: -10px;
 }
 
 .mainpage {
@@ -70,6 +78,9 @@ p {
 
 .quotes {
   flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .logo {
@@ -81,9 +92,10 @@ p {
   background-color: white;
   box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999,
     4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
-  height: 200px;
+  height: 240px;
   margin-right: 8px;
   border: 1px solid black;
+  border-radius: 110px;
 }
 
 .piano {
@@ -112,6 +124,7 @@ p {
     4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
   margin-right: 8px;
   border: 1px solid black;
+  border-radius: 70px;
 }
 
 .navlinks li {
@@ -177,6 +190,10 @@ iframe {
   box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999,
     4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
   border-left: 1px solid black;
+}
+
+.countrycount {
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
